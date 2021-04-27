@@ -16,8 +16,10 @@ $bird2 = new Monster('Bird', 25, 12, 'bird.svg', 2,2 );
 $bird3 = new Monster('Bird', 25, 12, 'bird.svg', 3,3 );
 $arena = new Arena($heracles, [$bird1, $bird2, $bird3]);
 
+$bow = new Weapon(5, 8 , 'bow.svg');
 $sword = new Weapon();
-$heracles->setWeapon($sword);
+$heracles->setWeapon($bow);
+
 
 $shield = new Shield();
 $heracles->setShield($shield);
